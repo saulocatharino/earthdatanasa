@@ -18,7 +18,7 @@ Inside script 'utils.py' have two functions: 'convert' and 'get'.<br>
 <br>
 The function named 'convert' scale from latitude and longitude to epsg4326 projection location by the zoom level.
 <br>
-The function 'get' request a image using RestAPI with especified parameters.
+The function 'get' request a image using RestAPI with especified parameters like: Band, date, location and zoom.
 # Citing
 
 If you use our code, please cite our work:<br>
