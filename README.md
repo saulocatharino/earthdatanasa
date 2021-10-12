@@ -22,10 +22,10 @@ The function 'get' request a image using RestAPI with especified parameters.
 # Citing
 
 If you use our code,please cite our work
-
-@misc{saulocatharino,
-     title={Earth-Data-Nasa-Imagery}, 
-     author={Saulo Catharino},
-     year={2021},
-     email={saulocatharino@gmail.com}
-}
+<br><i>
+@misc{saulocatharino,<br>
+     title={Earth-Data-Nasa-Imagery}, <br>
+     author={Saulo Catharino},<br>
+     year={2021},<br>
+     email={saulocatharino@gmail.com}<br>
+}<br></i>
