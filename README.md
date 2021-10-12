@@ -21,7 +21,7 @@ The function 'convert' converts from latitude and longitude to epsg4326 projecti
 The function 'get' request a image using RestAPI with especified parameters.
 # Citing
 
-If you use our code,please cite our work
+If you use our code, please cite our work:<br>
 <br><i>
 @misc{saulocatharino,<br>
      title={Earth-Data-Nasa-Imagery}, <br>
