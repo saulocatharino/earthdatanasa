@@ -11,3 +11,15 @@ pip3 install streamlit<br>
 To execute:
 <br>
 <br>streamlit run app.py
+<br>
+<br>
+# Citing
+
+If you use our code,please cite our work
+
+@misc{saulocatharino,
+     title={Earth-Data-Nasa-Imagery}, 
+     author={Saulo Catharino},
+     year={2021},
+     email={saulocatharino@gmail.com}
+}
