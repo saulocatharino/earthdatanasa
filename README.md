@@ -1,5 +1,5 @@
 #  Earth Data Nasa Imagery 
-Get satellites images at realtime from Nasa data using Python/Streamlit and RestAPI.<br><br>
+Get satellites images at realtime and detect clouds from Nasa Data using Python/Streamlit and RestAPI.<br><br>
 Requirements:<br>
 Opencv, Numpy & Streamlit<br>
 <br>
