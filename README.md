@@ -1,9 +1,10 @@
 # Earth Data Nasa get Images
 Get satellites images at realtime from Nasa data using Python/Streamlit and RestAPI.<br><br>
 Requirements:<br>
-Numpy & Streamlit<br>
+Opencv, Numpy & Streamlit<br>
 <br>
 To install dependencies:<br>
+pip3 install opencv-python<br>
 pip3 install numpy<br>
 pip3 install streamlit<br>
 <br><br>
