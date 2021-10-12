@@ -1,2 +1,5 @@
 # earthdatanasa
-Get satellites images at realtime from Nasa data using Python and RestAPI.
+Get satellites images at realtime from Nasa data using Python/Streamlit and RestAPI.<br><br>
+To execute:
+<br>
+<br>streamlit run app.py
