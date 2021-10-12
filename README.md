@@ -13,6 +13,12 @@ To execute:
 <br>streamlit run app.py
 <br>
 <br>
+# How it Works?
+Inside script 'utils.py' have two functions: 'convert' and 'get'.<br>
+<br>
+The function 'convert' converts from latitude and longitude to epsg4326 projection.
+<br>
+The function 'get' request a image using RestAPI with especified parameters.
 # Citing
 
 If you use our code,please cite our work
