@@ -41,7 +41,7 @@ if level == "":
 	level =0 
 if dias == "":
 	dias = 0
-if enviar and int(level) >=0 and int(level) <=0:
+if enviar and int(level) >=0 and int(level) <=8:
 	# Configuração dos parâmetros para requisição da API
 	data = date.today()  - timedelta(days=int(dias))
 	
