@@ -4,11 +4,9 @@ import time
 import streamlit as st
 from utils import *
 
+# Cria objeto streamlit para menu lateral
 side = st.sidebar
 
-
-
-# Função para converter a posição de Latitude e Longitude para a escala
 
 
 
@@ -18,14 +16,25 @@ bandas = [ 'MODIS_Aqua_CorrectedReflectance_TrueColor', 'MODIS_Terra_CorrectedRe
 	'MODIS_Terra_CorrectedReflectance_Bands721', 'MODIS_Aqua_CorrectedReflectance_Bands721',\
 	'MODIS_Terra_L3_SurfaceReflectance_Bands121_8Day', 'MODIS_Aqua_L3_SurfaceReflectance_Bands121_8Day']
 
+# Cria objeto streamlit vazio
 t = st.empty()
+
+# Objeto select box para seleção de banda
 banda = side.selectbox("Selecione Uma opção", options = bandas)
 
-
+# Objeto de entrada de texto para seleção de latitude
 latitude = side.text_input("Latitude")
+
+# Objeto de entrada de texto para seleção de longitude
 longitude = side.text_input("Longitude")
+
+# Objeto de entrada de texto para seleção de Level (zoom)
 level = side.text_input("Zoom level (0-8)")
+
+# Objeto de entrada de texto para seleção de dias passados
 dias = side.text_input("Days ago: (min 0)")
+
+# Objeto botão para envio de parâmetros
 enviar = side.button("Send")
 
 if latitude == "":
@@ -37,6 +46,7 @@ if level == "":
 if dias == "":
 	dias = 0
 if enviar and int(level) >=0 and int(level) <=8:
+	
 	# Configuração dos parâmetros para requisição da API
 	data = date.today()  - timedelta(days=int(dias))
 	
