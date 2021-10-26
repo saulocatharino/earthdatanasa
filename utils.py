@@ -13,7 +13,7 @@ def get(data,level,lat,lon,banda):
 	row, col = convert(float(lat),float(lon),int(level))
 	url = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/{}/default/{}/250m/{}/{}/{}.jpg".format(banda,data,int(level),row,col)
 	print(url)
-	# Conversão do quadrante adquirido para o formato opencv
+	# Conversão da imagem do quadrante adquirido em Base64 para o formato opencv
 	req =requests.get(url).content
 	arr = np.asarray(bytearray(req), dtype=np.uint8)
 	img = cv2.imdecode(arr, -1)
