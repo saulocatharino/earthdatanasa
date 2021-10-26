@@ -40,7 +40,7 @@ if enviar and int(level) >=0 and int(level) <=8:
 	# Configuração dos parâmetros para requisição da API
 	data = date.today()  - timedelta(days=int(dias))
 	
-
+	# A função 'get' adquire as imagens da API da Nasa a partir dos parâmetros: data, level(zoom), latitude, longitude e banda.
 	img = get(data,level,latitude,longitude,banda)
 	
 	st.image(img)
