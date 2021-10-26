@@ -2,11 +2,13 @@ import requests
 import cv2
 import numpy as np
 
+# Função para converter as coordenadas em Latitude e longitude para a escala da projeção
 def convert(lat,lon,level):
 	row = ((90 - lat) * (2 ** level)) // 288
 	col = ((180 + lon) * (2 ** level)) // 288
 	return int(row),int(col)
 
+# Função que faz requisição à API da Nasa para aquisição da imagem da localização em escala
 def get(data,level,lat,lon,banda):
 	row, col = convert(float(lat),float(lon),int(level))
 	url = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/{}/default/{}/250m/{}/{}/{}.jpg".format(banda,data,int(level),row,col)
